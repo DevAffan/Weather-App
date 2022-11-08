@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 .creator{
-    margin-top: 30%;
+    margin-top: 40%;
     margin-left: 82%;
 }
 
@@ -24,6 +24,7 @@ body {
 
 input{
     border: none;
+    background-color: #eee;
 }
 
 html {
