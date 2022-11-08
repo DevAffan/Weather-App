@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
+.creator{
+    margin-top: 30%;
+    margin-left: 82%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +12,12 @@
 }
 
 body {
-    background: #f3f2ef;
+    background: #d1f9fd;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     font-family: "Jost", sans-serif;
 }
@@ -30,12 +35,11 @@ html {
     background: #eee;
 }
 
-.box {
-    width: 35vw;
-    height: 60vh;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
-    background: #a5bbdd;
+.main {
+    width: 80vw;
+    height: 120vh;
+    main-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #5bb4fd;
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
@@ -47,15 +51,15 @@ html {
     opacity: 0.3;
     position: absolute;
     top: 120%;
-    left: 50%;
+    left: 30%;
     background: #fff;
-    width: 50rem;
+    width: 80rem;
     height: 50rem;
     margin-left: -25rem;
     margin-top: -20rem;
     transform-origin: 50% 48%;
     border-radius: 43%;
-    animation: drift 3000ms infinite linear;
+    animation: drift 4000ms infinite linear;
     z-index: 1;
 }
 
@@ -71,7 +75,7 @@ html {
     z-index: 3 !important;
 }
 
-.box::after {
+.main::after {
     content: "";
     display: block;
     left: 0;
@@ -91,7 +95,7 @@ html {
     }
 }
 
-.info {
+.detail {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -103,7 +107,7 @@ html {
 }
 
 .location {
-    margin-top: -5.5rem;
+    margin-top: 1.5rem;
     text-align: center;
     font-weight: 800;
     font-size: 5rem;
@@ -138,7 +142,7 @@ html {
     font-size: 3rem;
 }
 
-.tempmin_max {
+.data {
     text-align: center;
     margin-top: 0.3rem;
     font-weight: 300;
@@ -169,7 +173,7 @@ html {
 }
 
 @media (max-width: 600px) {
-    .box {
+    .main {
         width: 90vw;
         height: 80vh;
     }
@@ -182,13 +186,13 @@ html {
         font-size: 5em;
     }
 
-    .info {
+    .detail {
         font-size: 1.5em;
     }
 }
 
 @media (max-width: 500px) {
-    .box {
+    .main {
         height: 80vh;
     }
 
@@ -212,7 +216,7 @@ body > span {
 }
 
 .inputField {
-    width: 50%;
+    width: 80%;
     margin: auto;
     border-radius: 5rem;
     padding: 1rem 1rem;
@@ -224,4 +228,18 @@ body > span {
     text-align: center;
     font-size: 2rem;
     margin: 2rem auto;
+}
+
+
+.heading{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px 0px;
+    color: #57606f;
+}
+
+.icon-comment{
+    display: contents;
 }
